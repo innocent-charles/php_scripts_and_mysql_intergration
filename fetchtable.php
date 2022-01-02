@@ -41,7 +41,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['Job'] . "</td>";
   echo "</tr>";
   }
-mysql_close($con);
+$con->close();
 ?>
 </table>
 <script type="text/javascript" src="js/bootstrap.js"></script>
