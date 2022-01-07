@@ -23,11 +23,11 @@ function here()
 here();
 
 echo "<br>";
-if($gender == "male")
+if($gender == "male" || $gender == "MALE")
 {
 	echo "It is Male";
 }
-else if($gender == "MALE")
+else if($gender != "MALE" || $gender != "male")
 {
 	echo "It is NOT a Male";
 }
@@ -40,15 +40,12 @@ else
 switch ($gender)
 {
 case "male":
+case "MALE":
 {
 	echo "male";
 	break;
 }
-case "MALE":
-{
-	echo "MALE";
-	break;
-}
+
 default :
 {
 	echo "Hdd";
