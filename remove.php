@@ -29,7 +29,7 @@ $conn = mysqli_connect("localhost", "root", "", "info_employee");
         } 
         else 
         {
-            echo "Employee is not Deleted";
+            echo "<script> alert(\"Employee is not Deleted\") </script>;
         }
     }
     if(mysqli_connect_error()) 
